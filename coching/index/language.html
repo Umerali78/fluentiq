@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fluentiq Academy — Languages</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="shortcut icon" href="/logo1.png" type="image/png" />
+    <style>
+        .lang-card .flag-img {
+            width: 48px;
+            height: 36px;
+            border-radius: 4px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+            object-fit: cover;
+            vertical-align: middle;
+        }
+        .lang-card h3 {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            flex-wrap: wrap;
+        }
+        .lang-card ul {
+            flex: 1;
+        }
+        .btn-outline {
+            align-self: flex-start;
+        }
+        .languages-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 2rem;
+            max-width: 1300px;
+            margin: 0 auto;
+        }
+        .lang-card {
+            background: #fff;
+            border-radius: 16px;
+            padding: 1.8rem;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid #f0f0f0;
+        }
+        .lang-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 32px rgba(0,0,0,0.12);
+        }
+        .lang-card h3 {
+            font-size: 1.4rem;
+            margin-bottom: 0.5rem;
+            color: #1a1a2e;
+        }
+        .lang-card p {
+            color: #555;
+            margin-bottom: 1rem;
+            font-size: 0.95rem;
+        }
+        .lang-card ul {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 1.2rem 0;
+        }
+        .lang-card ul li {
+            padding: 0.3rem 0;
+            color: #333;
+            font-size: 0.92rem;
+        }
+        .btn-outline {
+            display: inline-block;
+            padding: 0.6rem 1.6rem;
+            border: 2px solid #e94560;
+            color: #e94560;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+        }
+        .btn-outline:hover {
+            background: #e94560;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="preloader">
+        <div class="loader">
+            <img src="/logo1.png" alt="Fluentiq Academy" />
+            <div class="loader-ring"></div>
+            <p>Loading...</p>
+        </div>
+    </div>
+
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="brand">
+                <img src="/logo1.png" alt="Logo" />
+                <span>Fluentiq <span>Academy</span></span>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">🏠 Home</a></li>
+                <li><a href="courses.html">📚 Courses</a></li>
+                <li><a href="language.html" class="active">🌍 Languages</a></li>
+                <li><a href="addmision.html">📝 Admission</a></li>
+                <li><a href="about.html">ℹ️ About</a></li>
+                <li><a href="contact.html">📞 Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">☰</div>
+        </div>
+    </nav>
+
+    <section class="page-header">
+        <div class="page-header-content">
+            <h1>🌍 Master a <span>New Language</span></h1>
+            <p>Learn the world's most spoken languages with our expert teachers.</p>
+        </div>
+    </section>
+
+    <section class="languages-page">
+        <div class="languages-grid">
+            <!-- English -->
+            <div class="lang-card large">
+                <h3>
+                    <img class="flag-img" src="https://flagcdn.com/w80/gb.png" alt="UK Flag" />
+                    English
+                </h3>
+                <p>The global language of business and communication.</p>
+                <ul>
+                    <li>✅ Spoken English</li>
+                    <li>✅ Written English</li>
+                    <li>✅ Grammar &amp; Vocabulary</li>
+                    <li>✅ IELTS Preparation</li>
+                </ul>
+                <a href="addmision.html" class="btn-outline">Enroll Now</a>
+            </div>
+
+            <!-- German -->
+            <div class="lang-card large">
+                <h3>
+                    <img class="flag-img" src="https://flagcdn.com/w80/de.png" alt="German Flag" />
+                    German
+                </h3>
+                <p>The language of innovation and engineering.</p>
+                <ul>
+                    <li>✅ A1 to B2 Levels</li>
+                    <li>✅ Speaking &amp; Writing</li>
+                    <li>✅ Professional German</li>
+                    <li>✅ Goethe Preparation</li>
+                </ul>
+                <a href="addmision.html" class="btn-outline">Enroll Now</a>
+            </div>
+
+            <!-- French -->
+            <div class="lang-card large">
+                <h3>
+                    <img class="flag-img" src="https://flagcdn.com/w80/fr.png" alt="French Flag" />
+                    French
+                </h3>
+                <p>The language of art, culture, and diplomacy.</p>
+                <ul>
+                    <li>✅ A1 to B2 Levels</li>
+                    <li>✅ Conversation Practice</li>
+                    <li>✅ Business French</li>
+                    <li>✅ DELF Preparation</li>
+                </ul>
+                <a href="addmision.html" class="btn-outline">Enroll Now</a>
+            </div>
+
+            <!-- Arabic -->
+            <div class="lang-card large">
+                <h3>
+                    <img class="flag-img" src="https://flagcdn.com/w80/sa.png" alt="Saudi Arabia Flag" />
+                    Arabic
+                </h3>
+                <p>One of the most widely spoken languages in the world.</p>
+                <ul>
+                    <li>✅ Modern Standard Arabic</li>
+                    <li>✅ Conversational Arabic</li>
+                    <li>✅ Reading &amp; Writing</li>
+                    <li>✅ Quranic Arabic</li>
+                </ul>
+                <a href="addmision.html" class="btn-outline">Enroll Now</a>
+            </div>
+
+            <!-- Chinese -->
+            <div class="lang-card large">
+                <h3>
+                    <img class="flag-img" src="https://flagcdn.com/w80/cn.png" alt="China Flag" />
+                    Chinese
+                </h3>
+                <p>The language of the future economy.</p>
+                <ul>
+                    <li>✅ HSK 1 to 4</li>
+                    <li>✅ Speaking &amp; Writing</li>
+                    <li>✅ Business Chinese</li>
+                    <li>✅ Cultural Immersion</li>
+                </ul>
+                <a href="addmision.html" class="btn-outline">Enroll Now</a>
+            </div>
+
+            <!-- Spanish -->
+            <div class="lang-card large">
+                <h3>
+                    <img class="flag-img" src="https://flagcdn.com/w80/es.png" alt="Spain Flag" />
+                    Spanish
+                </h3>
+                <p>One of the fastest-growing languages globally.</p>
+                <ul>
+                    <li>✅ A1 to B2 Levels</li>
+                    <li>✅ Conversation Practice</li>
+                    <li>✅ Latin American Spanish</li>
+                    <li>✅ DELE Preparation</li>
+                </ul>
+                <a href="addmision.html" class="btn-outline">Enroll Now</a>
+            </div>
+
+            <!-- Italian (NEW) -->
+            <div class="lang-card large">
+                <h3>
+                    <img class="flag-img" src="https://flagcdn.com/w80/it.png" alt="Italy Flag" />
+                    Italian
+                </h3>
+                <p>The language of art, music, and delicious food.</p>
+                <ul>
+                    <li>✅ A1 to B2 Levels</li>
+                    <li>✅ Conversation Practice</li>
+                    <li>✅ Business Italian</li>
+                    <li>✅ CILS Preparation</li>
+                </ul>
+                <a href="addmision.html" class="btn-outline">Enroll Now</a>
+            </div>
+
+            <!-- Korean (NEW) -->
+            <div class="lang-card large">
+                <h3>
+                    <img class="flag-img" src="https://flagcdn.com/w80/kr.png" alt="South Korea Flag" />
+                    Korean
+                </h3>
+                <p>The language of K-pop, technology, and culture.</p>
+                <ul>
+                    <li>✅ TOPIK 1 to 4</li>
+                    <li>✅ Speaking &amp; Writing</li>
+                    <li>✅ Business Korean</li>
+                    <li>✅ Cultural Immersion</li>
+                </ul>
+                <a href="addmision.html" class="btn-outline">Enroll Now</a>
+            </div>
+
+            <!-- Turkish (NEW) -->
+            <div class="lang-card large">
+                <h3>
+                    <img class="flag-img" src="https://flagcdn.com/w80/tr.png" alt="Turkey Flag" />
+                    Turkish
+                </h3>
+                <p>The language bridging Europe and Asia.</p>
+                <ul>
+                    <li>✅ A1 to B2 Levels</li>
+                    <li>✅ Conversation Practice</li>
+                    <li>✅ Business Turkish</li>
+                    <li>✅ TÖMER Preparation</li>
+                </ul>
+                <a href="addmision.html" class="btn-outline">Enroll Now</a>
+            </div>
+
+            <!-- Japanese (BONUS - NEW) -->
+            <div class="lang-card large">
+                <h3>
+                    <img class="flag-img" src="https://flagcdn.com/w80/jp.png" alt="Japan Flag" />
+                    Japanese
+                </h3>
+                <p>The language of anime, technology, and tradition.</p>
+                <ul>
+                    <li>✅ JLPT N5 to N2</li>
+                    <li>✅ Speaking &amp; Writing</li>
+                    <li>✅ Business Japanese</li>
+                    <li>✅ Cultural Immersion</li>
+                </ul>
+                <a href="addmision.html" class="btn-outline">Enroll Now</a>
+            </div>
+
+            <!-- Russian (BONUS - NEW) -->
+            <div class="lang-card large">
+                <h3>
+                    <img class="flag-img" src="https://flagcdn.com/w80/ru.png" alt="Russia Flag" />
+                    Russian
+                </h3>
+                <p>The language of literature, science, and diplomacy.</p>
+                <ul>
+                    <li>✅ A1 to B2 Levels</li>
+                    <li>✅ Speaking &amp; Writing</li>
+                    <li>✅ Business Russian</li>
+                    <li>✅ TORFL Preparation</li>
+                </ul>
+                <a href="addmision.html" class="btn-outline">Enroll Now</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-brand">
+                <img src="/logo1.png" alt="Logo" />
+                <h3>Fluentiq <span>Academy</span></h3>
+                <p>Learn. Grow. Succeed.</p>
+                <div class="socials">
+                    <a href="#">📘</a>
+                    <a href="#">📸</a>
+                    <a href="#">▶️</a>
+                    <a href="#">💬</a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="language.html">Languages</a></li>
+                    <li><a href="addmision.html">Admission</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Courses</h4>
+                <ul>
+                    <li><a href="courses.html">Academic</a></li>
+                    <li><a href="courses.html">Computer &amp; IT</a></li>
+                    <li><a href="language.html">Languages</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact</h4>
+                <p>📍 Your City, Pakistan</p>
+                <p>📞 +92-XXX-XXXXXXX</p>
+                <p>✉️ info@fluentiqacademy.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Fluentiq Academy. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="/script/script.js"></script>
+</body>
+</html>

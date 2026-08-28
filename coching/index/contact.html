@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fluentiq Academy — Contact</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="shortcut icon" href="/logo1.png" type="image/png" />
+</head>
+<body>
+
+    <div id="preloader">
+        <div class="loader">
+            <img src="/logo1.png" alt="Fluentiq Academy" />
+            <div class="loader-ring"></div>
+            <p>Loading...</p>
+        </div>
+    </div>
+
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="brand">
+                <img src="/logo1.png" alt="Logo" />
+                <span>Fluentiq <span>Academy</span></span>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">🏠 Home</a></li>
+                <li><a href="courses.html">📚 Courses</a></li>
+                <li><a href="language.html">🌍 Languages</a></li>
+                <li><a href="addmision.html">📝 Admission</a></li>
+                <li><a href="about.html">ℹ️ About</a></li>
+                <li><a href="contact.html" class="active">📞 Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">☰</div>
+        </div>
+    </nav>
+
+    <section class="page-header">
+        <div class="page-header-content">
+            <h1>📞 Get in <span>Touch</span></h1>
+            <p>We'd love to hear from you. Reach out to us anytime.</p>
+        </div>
+    </section>
+
+    <section class="contact-page">
+        <div class="contact-grid">
+            <div class="contact-info">
+                <div class="info-card">
+                    <div class="info-icon">📍</div>
+                    <div>
+                        <h4>Visit Us</h4>
+                        <p>Your City, Pakistan</p>
+                    </div>
+                </div>
+                <div class="info-card">
+                    <div class="info-icon">📞</div>
+                    <div>
+                        <h4>Call Us</h4>
+                        <p>+92-XXX-XXXXXXX</p>
+                        <p>+92-XXX-XXXXXXX</p>
+                    </div>
+                </div>
+                <div class="info-card">
+                    <div class="info-icon">✉️</div>
+                    <div>
+                        <h4>Email Us</h4>
+                        <p>info@fluentiqacademy.com</p>
+                        <p>support@fluentiqacademy.com</p>
+                    </div>
+                </div>
+                <div class="info-card">
+                    <div class="info-icon">🕐</div>
+                    <div>
+                        <h4>Working Hours</h4>
+                        <p>Mon-Fri: 9:00 AM - 8:00 PM</p>
+                        <p>Saturday: 10:00 AM - 4:00 PM</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form">
+                <h3>Send us a <span>Message</span></h3>
+                <form id="contactForm">
+                    <input type="text" id="contactName" placeholder="Your Name *" required />
+                    <input type="email" id="contactEmail" placeholder="Your Email *" required />
+                    <input type="text" id="contactSubject" placeholder="Subject" />
+                    <textarea id="contactMessage" rows="4" placeholder="Your Message *" required></textarea>
+                    <button type="submit" class="btn-primary btn-block">📩 Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-brand">
+                <img src="/logo1.png" alt="Logo" />
+                <h3>Fluentiq <span>Academy</span></h3>
+                <p>Learn. Grow. Succeed.</p>
+                <div class="socials">
+                    <a href="#">📘</a>
+                    <a href="#">📸</a>
+                    <a href="#">▶️</a>
+                    <a href="#">💬</a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="language.html">Languages</a></li>
+                    <li><a href="addmision.html">Admission</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Courses</h4>
+                <ul>
+                    <li><a href="courses.html">Academic</a></li>
+                    <li><a href="courses.html">Computer &amp; IT</a></li>
+                    <li><a href="language.html">Languages</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact</h4>
+                <p>📍 Your City, Pakistan</p>
+                <p>📞 +92-XXX-XXXXXXX</p>
+                <p>✉️ info@fluentiqacademy.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Fluentiq Academy. All Rights Reserved.</p>
+        </div>
+    </footer>
+<script>
+// ================================================================
+// CONTACT FORM → WHATSAPP (03172492509)
+// ================================================================
+const WHATSAPP_NUMBER = '923172492509';
+
+document.addEventListener('DOMContentLoaded', function() {
+    
+    // Preloader
+    window.addEventListener('load', function() {
+        setTimeout(function() {
+            document.getElementById('preloader').classList.add('hidden');
+        }, 1000);
+    });
+
+    // Navbar
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', function() {
+        if (window.scrollY > 80) {
+            navbar.classList.add('scrolled');
+        } else {
+            navbar.classList.remove('scrolled');
+        }
+    });
+
+    // Hamburger
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('navLinks');
+    if (hamburger) {
+        hamburger.addEventListener('click', function() {
+            navLinks.classList.toggle('open');
+            this.textContent = navLinks.classList.contains('open') ? '✕' : '☰';
+        });
+    }
+
+    // CONTACT FORM SUBMIT → WHATSAPP
+    const contactForm = document.getElementById('contactForm');
+    if (contactForm) {
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const name = document.getElementById('contactName').value;
+            const email = document.getElementById('contactEmail').value;
+            const subject = document.getElementById('contactSubject').value || 'N/A';
+            const message = document.getElementById('contactMessage').value;
+
+            // WhatsApp Message
+            const whatsappMessage = 
+                "📞 *CONTACT FORM SUBMISSION* 📞\n" +
+                "━━━━━━━━━━━━━━━━━━━━\n" +
+                "👤 *Name:* " + name + "\n" +
+                "📧 *Email:* " + email + "\n" +
+                "📋 *Subject:* " + subject + "\n" +
+                "💬 *Message:* " + message + "\n" +
+                "━━━━━━━━━━━━━━━━━━━━\n" +
+                "📅 *Date:* " + new Date().toLocaleString();
+
+            // WhatsApp par bhejein — DIRECT REDIRECT
+            const encodedMessage = encodeURIComponent(whatsappMessage);
+            const whatsappUrl = "https://wa.me/" + WHATSAPP_NUMBER + "?text=" + encodedMessage;
+            
+            // Direct redirect — no popup blocker
+            window.location.href = whatsappUrl;
+
+            alert('✅ Your message has been sent via WhatsApp!');
+            this.reset();
+        });
+    }
+
+});
+</script>
+</body>
+</html>
